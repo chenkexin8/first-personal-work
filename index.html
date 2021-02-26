@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>词云图</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+
+    <script src="echart3.js"></script>
+
+    <style>
+
+        html,
+
+        body,
+
+        #main {
+
+            width: 100%;
+
+            height: 100%;
+
+            margin: 0;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="main"></div>
+
+    <script>
+
+        var chart = echarts.init(document.getElementById('main'));
+
+        var option = {
+
+            tooltip: {
+
+                show: true
+
+            },
+
+            series: [{
+
+                type: 'wordCloud',
+
+                shape: 'triangle',
+
+                left: 'center',
+
+                top: 'center',
+
+                right: null,
+
+                bottom: null,
+
+                width: '70%',
+
+                height: '80%',
+
+                sizeRange: [12, 60],
+
+                rotationRange: [-90, 90],
+
+                rotationStep: 45,
+
+                gridSize: 8,
+
+                drawOutOfBound: false,
+
+                textStyle: {
+
+                normal: {
+
+                    fontFamily: 'sans-serif',
+
+                    fontWeight: 'normal'
+
+                },
+
+                emphasis: {
+
+                    shadowBlur: 10,
+
+                    shadowColor: 'purple'
+
+                }
+
+                },
+
+    "data": [
+
+        {
+
+            "name": "致敬",
+
+            "value": 1313
+
+        },
+
+        {
+
+            "name": "我们",
+
+            "value": 1081
+
+        },
+
+        {
+
+            "name": "加油",
+
+            "value": 1006
+
+        },
+
+        {
+
+            "name": "中国",
+
+            "value": 964
+
+        },
+
+        {
+
+            "name": "武汉",
+
+            "value": 795
+
+        },
+
+        {
+
+            "name": "疫情",
+
+            "value": 792
+
+        },
+
+        {
+
+            "name": "英雄",
+
+            "value": 731
+
+        },
+
+        {
+
+            "name": "你们",
+
+            "value": 701
+
+        },
+
+        {
+
+            "name": "真的",
+
+            "value": 669
+
+        },
+
+        {
+
+            "name": "感谢",
+
+            "value": 655
+
+        },
+
+        {
+
+            "name": "感动",
+
+            "value": 590
+
+        },
+
+        {
+
+            "name": "这个",
+
+            "value": 550
+
+        },
+
+        {
+
+            "name": "不敢",
+
+            "value": 542
+
+        },
+
+        {
+
+            "name": "没有",
+
+            "value": 537
+
+        },
+
+        {
+
+            "name": "所有",
+
+            "value": 522
+
+        },
+
+        {
+
+            "name": "一起",
+
+            "value": 515
+
+        },
+
+        {
+
+            "name": "电视剧",
+
+            "value": 498
+
+        },
+
+        {
+
+            "name": "医护人员",
+
+            "value": 497
+
+        },
+
+        {
+
+            "name": "行者",
+
+            "value": 496
+
+        },
+
+        {
+
+            "name": "医生",
+
+            "value": 445
+
+        },
+
+        {
+
+            "name": "最美",
+
+            "value": 425
+
+        },
+
+        {
+
+            "name": "导演",
+
+            "value": 423
+
+        },
+
+        {
+
+            "name": "一个",
+
+            "value": 421
+
+        },
+
+        {
+
+            "name": "这部",
+
+            "value": 403
+
+        },
+
+        {
+
+            "name": "抗疫",
+
+            "value": 397
+
+        },
+
+        {
+
+            "name": "演员",
+
+            "value": 391
+
+        },
+
+        {
+
+            "name": "眼泪",
+
+            "value": 360
+
+        },
+
+        {
+
+            "name": "他们",
+
+            "value": 341
+
+        },
+
+        {
+
+            "name": "伟大",
+
+            "value": 325
+
+        },
+
+        {
+
+            "name": "看到",
+
+            "value": 325
+
+        },
+
+        {
+
+            "name": "自己",
+
+            "value": 322
+
+        },
+
+        {
+
+            "name": "真实",
+
+            "value": 322
+
+        },
+
+        {
+
+            "name": "人民",
+
+            "value": 312
+
+        },
+
+        {
+
+            "name": "知道",
+
+            "value": 307
+
+        },
+
+        {
+
+            "name": "时候",
+
+            "value": 303
+
+        },
+
+        {
+
+            "name": "一直",
+
+            "value": 289
+
+        },
+
+        {
+
+            "name": "一线",
+
+            "value": 286
+
+        },
+
+        {
+
+            "name": "这么",
+
+            "value": 284
+
+        },
+
+        {
+
+            "name": "祖国",
+
+            "value": 278
+
+        },
+
+        {
+
+            "name": "终于",
+
+            "value": 272
+
+        },
+
+        {
+
+            "name": "希望",
+
+            "value": 269
+
+        },
+
+        {
+
+            "name": "就是",
+
+            "value": 265
+
+        },
+
+        {
+
+            "name": "大家",
+
+            "value": 259
+
+        },
+
+        {
+
+            "name": "还是",
+
+            "value": 258
+
+        },
+
+        {
+
+            "name": "辛苦",
+
+            "value": 251
+
+        },
+
+        {
+
+            "name": "点赞",
+
+            "value": 242
+
+        },
+
+        {
+
+            "name": "什么",
+
+            "value": 242
+
+        },
+
+        {
+
+            "name": "看着",
+
+            "value": 240
+
+        },
+
+        {
+
+            "name": "现在",
+
+            "value": 239
+
+        },
+
+        {
+
+            "name": "因为",
+
+            "value": 218
+
+        },
+
+        {
+
+            "name": "院长",
+
+            "value": 217
+
+        },
+
+        {
+
+            "name": "付出",
+
+            "value": 216
+
+        },
+
+        {
+
+            "name": "好看",
+
+            "value": 210
+
+        },
+
+        {
+
+            "name": "白衣天使",
+
+            "value": 208
+
+        },
+
+        {
+
+            "name": "开始",
+
+            "value": 207
+
+        },
+
+        {
+
+            "name": "那些",
+
+            "value": 203
+
+        },
+
+        {
+
+            "name": "张嘉译",
+
+            "value": 203
+
+        },
+
+        {
+
+            "name": "怎么",
+
+            "value": 202
+
+        },
+
+        {
+
+            "name": "护士",
+
+            "value": 199
+
+        },
+
+        {
+
+            "name": "湖北",
+
+            "value": 189
+
+        },
+
+        {
+
+            "name": "当时",
+
+            "value": 188
+
+        },
+
+        {
+
+            "name": "不是",
+
+            "value": 185
+
+        },
+
+        {
+
+            "name": "感觉",
+
+            "value": 182
+
+        },
+
+        {
+
+            "name": "一部",
+
+            "value": 181
+
+        },
+
+        {
+
+            "name": "感人",
+
+            "value": 180
+
+        },
+
+        {
+
+            "name": "一位",
+
+            "value": 178
+
+        }
+
+    ]
+
+                 }]
+
+    
+
+};
+
+
+
+    chart.setOption(option);
+
+    window.onresize = function () {
+
+            chart.resize();
+
+        }
+
+    </script>
+
+</body>
+
+</html>
